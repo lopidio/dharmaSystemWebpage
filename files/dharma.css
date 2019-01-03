@@ -7,15 +7,24 @@ body {
     color: #5a5a5a;
 }
 
-.dharma-text-body {
-    font-family: 'LilGroteskRegular';
+@font-face {
+    font-family: 'quadrat-serialregular';
+    src: url('./quadratserialregular-webfont.woff2') format('woff2'),
+    url('./quadratserialregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
+.dharma-text-body {
+    font-family: 'LilGroteskRegular';
+    font-weight: bolder;
+    font-style: normal;
+}
+
 .dharma-text-header {
-    font-family: 'QuadratSerial';
-    font-weight: normal;
+    font-family: 'quadrat-serialregular';
+    font-weight: 900;
+    font-size: 40px;
     font-style: normal;
 }
 
