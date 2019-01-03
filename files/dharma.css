@@ -12,10 +12,10 @@ body {
     color: #5a5a5a;
 }
 
-main::after {
+html::after {
     content: "";
-    background: url(cover.png) no-repeat;
     background-size: 150%;
+    background: url(cover.png) no-repeat fixed;
     left: -400px;
     opacity: 0.2;
     top: 5vh;
@@ -123,6 +123,22 @@ main::after {
 /* dharma-topics
 ------------------------- */
 
+.dharma-topic {
+    padding: 6rem 4rem 6rem;
+    margin: 3rem 0 3rem;
+}
+
+.dharma-topic-odd {
+    color: #f7f7f7;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.dharma-topic-even {
+    color: #7f8078;
+    background-color: rgba(231, 231, 220, 0.75);
+
+}
+
 .dharma-topic-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
@@ -145,7 +161,7 @@ main::after {
 }
 
 @media (min-width: 62em) {
-    main::after {
+    html::after {
         top: 5vh;
         opacity: 0.5;
         background-size: 100%;
@@ -155,11 +171,6 @@ main::after {
     .navbar-brand {
         width: 10%;
     }
-
-    .dharma-topic-heading {
-        margin-top: 7rem;
-    }
-
 
 }
 
