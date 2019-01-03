@@ -7,6 +7,19 @@ body {
     color: #5a5a5a;
 }
 
+.main::after {
+    content: "";
+    background: url(cover.jpeg) no-repeat;
+    background-size: 100%;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 @font-face {
     font-family: 'quadrat-serialregular';
     src: url('./quadratserialregular-webfont.woff2') format('woff2'),
@@ -18,9 +31,8 @@ body {
 
 .dharma-header {
     color: black;
-    padding-top: 3rem;
-    /*padding-right: 5rem;*/
-    /*padding-left: 5rem;*/
+    padding-right: 3rem;
+    padding-left: 3rem;
 }
 
 .dharma-header-text {
@@ -33,12 +45,14 @@ body {
 .dharma-header-title {
     font-family: 'quadrat-serialregular';
     font-weight: 900;
+    text-align: center;
     font-size: 42px;
     font-style: normal;
 }
 
 .dharma-button {
-    padding: 8px 30px;
+    padding: 10px 35px;
+    font-size: 20px;
     border-radius: 0px;
     background-color: #65c37e;
     color: white;
