@@ -14,7 +14,7 @@ body {
 
 main::after {
     content: "";
-    background: url(cover.jpeg) no-repeat;
+    background: url(cover.png) no-repeat;
     background-size: 100%;
     opacity: 0.5;
     top: 0;
