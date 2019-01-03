@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<!-- saved from url=(0052)https://getbootstrap.com/docs/4.1/examples/carousel/ -->
-<html lang="en">
+<html lang="pt">
 <head>
     <link rel="stylesheet" type="text/css" href="files/dharma.css"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Dharma RPG System official web page">
+    <meta name="author" content="Virgs">
     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
     <title>Sistema Dharma</title>
@@ -29,46 +29,52 @@
 <body>
 
 <header>
-    <nav class="navbar navbar-expand-md dharma-navbar py-3">
+    <nav class="navbar navbar-expand-md navbar-light dharma-navbar py-3">
         <!--fixed-top-->
-        <a class="navbar-brand mx-auto" href="#">Sistema Dharma</a>
-        <div class="collapse navbar-collapse pr-5" id="navbarCollapse">
-            <ul class="nav nav-pills nav-fill" style="width: 100%">
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">O Autor</a></li>
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Novidades</a></li>
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">História</a></li>
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Produtos</a></li>
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Em Produção</a></li>
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Expansões</a></li>
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Artigos</a></li>
-                <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Contatos</a></li>
-            </ul>
+        <div class="container-fluid">
+            <button class="navbar-toggler px-0 mx-0" type="button" data-toggle="collapse"
+                    data-target="#dharmaNavbarCollapse" style="border: none">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mx-auto" href="#">Sistema Dharma</a>
+            <div class="navbar-collapse collapse" id="dharmaNavbarCollapse">
+                <ul class="nav nav-pills nav-fill" style="width: 100%">
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">O Autor</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Novidades</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">História</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Em Produção</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Expansões</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Artigos</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Contatos</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
 
-<main role="main">
+<main role="main" class="pt-5">
 
-    <div style="margin-bottom: 4rem"></div>
+    <!--<div style="margin-bottom: 4rem"></div>-->
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <div class="container-fluid">
-
+    <div class="container-fluid pt-sm-5 px-sm-5">
         <div class="dharma-header pt-0 pt-sm-5">
-
             <div class="row justify-content-between">
                 <div class="col-sm-3 pb-5 pb-sm-0">
                     <h2 class="dharma-header-title">Material Gratuito</h2>
                     <p class="dharma-header-text">Faça download de materiais do Sistema Dharma gratuitamente para
                         expandir suas aventuras.</p>
-                    <p><a class="btn dharma-button" href="#" role="button">PRODUTOS</a></p>
+                    <p style="text-align: center"><a href="#" class="btn dharma-button" role="button">PRODUTOS</a></p>
                 </div>
                 <div class="col-sm-3 pt-5 pt-sm-0">
                     <h2 class="dharma-header-title">Participe</h2>
-                    <p class="dharma-header-text">Escreva contos e histórias de fantasia e divulgue seu talento nosmateriais oficiais de Dharma.</p>
-                    <p><a class="btn dharma-button" href="#" role="button">CONTATE-NOS</a></p>
+                    <p class="dharma-header-text">Escreva contos e histórias de fantasia e divulgue seu talento nos
+                        materiais oficiais de Dharma.</p>
+                    <p style="text-align: center"><a href="#" class="btn dharma-button" role="button">CONTATE-NOS</a>
+                    </p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
 
@@ -147,20 +153,16 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha256-399DNRyfIpWIy1ZV0KmEIIuIQ5sBHdLu9MBtVHrNtt8=" crossorigin="anonymous"></script>
 
-<script>
-    new WOW().init();
-</script>
+<script>new WOW().init();</script>
 <!-- Bootstrap core JavaScript
 ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./files/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+<script src="./files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="./files/jquery-3.3.1.slim.min.js"><\/script>')</script>
 <script src="./files/popper.min.js"></script>
 <script src="./files/bootstrap.min.js"></script>
 <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="./files/holder.min.js"></script>
+<!--<script src="./files/holder.min.js"></script>-->
 
 
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none"
