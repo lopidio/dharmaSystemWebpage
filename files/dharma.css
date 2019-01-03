@@ -17,7 +17,7 @@ main::after {
     background: url(cover.png) no-repeat;
     background-size: 100%;
     opacity: 0.5;
-    top: 0;
+    top: 20vh;
     left: 0;
     bottom: 0;
     right: 0;
@@ -33,6 +33,9 @@ main::after {
     font-style: normal;
 }
 
+.navbar-brand {
+    width: 50%;
+}
 
 .dharma-header {
     color: black;
@@ -119,13 +122,17 @@ main::after {
 }
 
 @media (min-width: 62em) {
+    main::after {
+        top: 10vh;
+    }
+
+    .navbar-brand {
+        width: 10%;
+    }
+
     .dharma-topic-heading {
         margin-top: 7rem;
     }
 }
 
-@media (max-width: 62em) {
-    main::after {
-        top: 80px;
-    }
-}
+
