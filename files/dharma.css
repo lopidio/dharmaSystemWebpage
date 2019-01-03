@@ -2,6 +2,11 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+html {
+    scroll-behavior: smooth;
+    /*https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
+}
+
 body {
     padding-bottom: 3rem;
     color: #5a5a5a;
@@ -88,15 +93,16 @@ main::after {
     margin-left: .75rem;
 }
 
-/* Featurettes
+/* dharma-topics
 ------------------------- */
 
-.featurette-divider {
+.dharma-topic-divider {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
-.featurette-heading {
+.dharma-topic-heading {
+    font-family: 'quadrat-serialregular';
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
@@ -108,13 +114,13 @@ main::after {
 
 @media (min-width: 40em) {
     /* Bump up size of carousel content */
-    .featurette-heading {
+    .dharma-topic-heading {
         font-size: 50px;
     }
 }
 
 @media (min-width: 62em) {
-    .featurette-heading {
+    .dharma-topic-heading {
         margin-top: 7rem;
     }
 }
