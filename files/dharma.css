@@ -25,6 +25,30 @@ main::after {
     z-index: -1;
 }
 
+.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown-menu {
+    background-color: #221f20;
+    width: max-content;
+    padding: 0 40px 10px;
+}
+
+.dropdown-item {
+    /*font-size: 14px;*/
+    /*height: 34px;*/
+    font-family: 'LilGroteskRegular';
+    font-size: 20px;
+    font-style: normal;
+
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: #f7f7f7;
+    border-bottom: solid 1px #f7f7f7;
+}
+
 @font-face {
     font-family: 'quadrat-serialregular';
     src: url('./quadratserialregular-webfont.woff2') format('woff2'),
@@ -110,7 +134,6 @@ main::after {
     line-height: 1;
     letter-spacing: -.05rem;
 }
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

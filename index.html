@@ -33,13 +33,13 @@
 <header>
     <nav class="navbar navbar-expand-md navbar-light dharma-navbar py-3">
         <!--fixed-top-->
-        <div class="container-fluid">
-            <button class="navbar-toggler px-0 mx-0" type="button" data-toggle="collapse"
-                    data-target="#dharmaNavbarCollapse" style="border: none">
+        <div class="container-fluid dropdown">
+            <button class="navbar-toggler dropdown-toggle px-0 mx-0" type="button" data-toggle="dropdown"  id="dropdownMenuButton"
+                    style="border: none">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand mr-auto ml-5 mx-sm-auto" href="#"><img class="img-fluid" src="./files/logo.png"></a>
-            <div class="navbar-collapse collapse" id="dharmaNavbarCollapse">
+            <div class="navbar-collapse collapse">
                 <ul class="nav nav-pills nav-fill" style="width: 100%">
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#authorHeader">O Autor</a></li>
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#newsHeader">Novidades</a></li>
@@ -50,6 +50,16 @@
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Artigos</a></li>
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Contatos</a></li>
                 </ul>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#authorHeader">O Autor</a>
+                <a class="dropdown-item" href="#newsHeader">Novidades</a>
+                <a class="dropdown-item" href="#">História</a>
+                <a class="dropdown-item" href="#">Produtos</a>
+                <a class="dropdown-item" href="#">Em Produção</a>
+                <a class="dropdown-item" href="#">Expansões</a>
+                <a class="dropdown-item" href="#">Artigos</a>
+                <a class="dropdown-item" href="#">Contatos</a>
             </div>
         </div>
     </nav>
