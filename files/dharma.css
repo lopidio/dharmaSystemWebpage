@@ -134,15 +134,9 @@ main::after {
     margin: 3rem 0 3rem;
 }
 
-.dharma-topic-odd {
+.dharma-topic-background {
     color: #f7f7f7;
-    background-color: rgba(0, 0, 0, 0.75);
-}
-
-.dharma-topic-even {
-    color: #7f8078;
-    background-color: rgba(231, 231, 220, 0.75);
-
+    background-color: #474a51;
 }
 
 .dharma-topic-divider {
