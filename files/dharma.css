@@ -12,13 +12,19 @@ body {
     color: #5a5a5a;
 }
 
-html::after {
+main::after {
     content: "";
     background-size: 150%;
-    background: url(cover.png) no-repeat fixed;
-    left: -400px;
+    background: url(cover.png);
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: center;
+    padding: 0;
+    margin: 0;
+    left: 0;
     opacity: 0.2;
-    top: 5vh;
+    top: -100vw;
+    min-height: 500vh;
     bottom: 0;
     right: 0;
     position: absolute;
@@ -154,18 +160,25 @@ html::after {
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
-@media (min-width: 40em) {
+@media (min-width: 600px) {
     .dharma-topic-heading {
         font-size: 50px;
     }
+
+    main::after {
+        background: url(cover.png) no-repeat;
+        top: 0;
+        left: -140vw;
+        opacity: 0.5;
+    }
 }
 
-@media (min-width: 62em) {
-    html::after {
-        top: 5vh;
-        opacity: 0.5;
-        background-size: 100%;
+@media (min-width: 700px) {
+    main::after {
+        background: url(cover.png) no-repeat;
+        top: 100px;
         left: 0;
+        background-size: 100%;
     }
 
     .navbar-brand {

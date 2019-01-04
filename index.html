@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <link rel="stylesheet" type="text/css" href="files/dharma.css"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131727752-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-131727752-1');
+    </script>
+    <link rel="stylesheet" type="text/css" href="./files/dharma.css"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
@@ -23,10 +32,6 @@
     <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/lil-grotesk" type="text/css"/>
     <link rel="stylesheet" media="screen" href="./files/quadratSerialRegular.ttf" type="text/css"/>
 
-
-    <!-- Custom styles for this template -->
-    <link href="./files/dharma.css" rel="stylesheet">
-
 </head>
 <body>
 
@@ -45,7 +50,7 @@
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#authorHeader">O Autor</a></li>
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#newsHeader">Novidades</a></li>
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#historyHeader">História</a></li>
-                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#productsHeader">Produtos</a></li>
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Em Produção</a></li>
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Expansões</a></li>
                     <li class="nav-item"><a class="nav-link dharma-navbar-item" href="#">Artigos</a></li>
@@ -56,7 +61,7 @@
                 <a class="dropdown-item" href="#authorHeader">O Autor</a>
                 <a class="dropdown-item" href="#newsHeader">Novidades</a>
                 <a class="dropdown-item" href="#historyHeader">História</a>
-                <a class="dropdown-item" href="#">Produtos</a>
+                <a class="dropdown-item" href="#productsHeader">Produtos</a>
                 <a class="dropdown-item" href="#">Em Produção</a>
                 <a class="dropdown-item" href="#">Expansões</a>
                 <a class="dropdown-item" href="#">Artigos</a>
@@ -67,15 +72,9 @@
 </header>
 
 <main role="main" class="pt-5 pt-sm-0">
-
-    <!--<div style="margin-bottom: 4rem"></div>-->
-    <!-- Marketing messaging and dharma-topics
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
     <div class="container-fluid pt-sm-5 px-0">
         <div class="dharma-header py-0 py-sm-5">
-            <div class="row justify-content-between">
+            <div class="row justify-content-between pt-sm-5">
                 <div class="col-md-3 pb-5 pb-md-0">
                     <h2 class="dharma-header-title">Material Gratuito</h2>
                     <p class="dharma-header-text">Faça download de materiais do Sistema Dharma gratuitamente para
@@ -90,34 +89,30 @@
                     <p style="text-align: center"><a href="#" class="btn dharma-button"
                                                      role="button">CONTATE-NOS</a>
                     </p>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-
+                </div>
+            </div>
         </div>
+
+        <div class="my-sm-5 py-sm-5"></div>
+
         <!-- START THE dharma-topicS -->
         <div class="marketing">
 
-            <hr class="dharma-topic-divider" id="authorHeader">
-            <div class="row dharma-topic wow fadeInLeft">
-                <div class="col-md-7">
-                    <h2 class="dharma-topic-heading">O Autor</h2>
-                    <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
-                        felis
-                        euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
-                        dapibus,
-                        tellus ac cursus commodo.</p>
-                </div>
-                <div class="col-md-5">
-                    <img class="dharma-topic-image img-fluid mx-auto" data-src="holder.js/500x500/auto"
-                         alt="500x500"
-                         style="width: 500px; height: 500px;"
-                         src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22500%22%20height%3D%22500%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20500%20500%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_1680a709499%20text%20%7B%20fill%3A%23AAAAAA%3Bfont-weight%3Abold%3Bfont-family%3AArial%2C%20Helvetica%2C%20Open%20Sans%2C%20sans-serif%2C%20monospace%3Bfont-size%3A25pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_1680a709499%22%3E%3Crect%20width%3D%22500%22%20height%3D%22500%22%20fill%3D%22%23EEEEEE%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22185.125%22%20y%3D%22261.1%22%3E500x500%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
-                         data-holder-rendered="true">
+            <div id="authorHeader" class="dharma-topic-odd">
+                <div class="row no-gutters justify-content-md-end dharma-topic wow fadeInRight">
+                    <div class="col-md-7">
+                        <h2 class="dharma-topic-heading">O Autor</h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis
+                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus,
+                            tellus ac cursus commodo.</p>
+                    </div>
                 </div>
             </div>
 
-            <div id="newsHeader">
-                <div class="row no-gutters dharma-topic dharma-topic-odd wow fadeInLeft">
+            <div id="newsHeader" class="dharma-topic-even">
+                <div class="row no-gutters dharma-topic wow fadeInLeft">
                     <div class="col-md-7">
                         <h2 class="dharma-topic-heading">Novidades</h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
@@ -129,9 +124,9 @@
                 </div>
             </div>
 
-            <div id="historyHeader">
-                <div class="row no-gutters dharma-topic dharma-topic-even wow fadeInRight">
-                    <div class="col-md-7 offset-md-5">
+            <div id="historyHeader" class="dharma-topic-odd">
+                <div class="row no-gutters justify-content-md-end dharma-topic wow fadeInRight">
+                    <div class="col-md-7">
                         <h2 class="dharma-topic-heading">História</h2>
                         <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
                             felis
@@ -142,8 +137,21 @@
                 </div>
             </div>
 
+            <div id="productsHeader" class="dharma-topic-even">
+                <div class="row no-gutters dharma-topic wow fadeInLeft">
+                    <div class="col-md-7">
+                        <h2 class="dharma-topic-heading">Produtos</h2>
+                        <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta
+                            felis
+                            euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce
+                            dapibus,
+                            tellus ac cursus commodo.</p>
+                    </div>
+                </div>
+            </div>
+
             <hr class="dharma-topic-divider">
-            <div class="row dharma-topic wow fadeInLeft">
+            <div class="row dharma-topic wow fadeInRight">
                 <div class="col-md-7">
                     <h2 class="dharma-topic-heading">And lastly, this one. <span
                             class="text-muted">Checkmate.</span>
@@ -169,12 +177,10 @@
 
     </div><!-- /.container -->
 
-
     <!-- FOOTER -->
     <footer class="container">
         <p class="float-right"><a href="#">Voltar para o topo</a></p>
-        <p>© 2017-2018 Company, Inc. · <a href="#">Privacy</a> · <a
-                href="#">Terms</a></p>
+        <p>© 2018-2019 Dharma Systems. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
     </footer>
 </main>
 
@@ -183,18 +189,12 @@
         integrity="sha256-399DNRyfIpWIy1ZV0KmEIIuIQ5sBHdLu9MBtVHrNtt8=" crossorigin="anonymous"></script>
 
 <script>new WOW().init();</script>
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
 <script src="./files/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
 <script>window.jQuery || document.write('<script src="./files/jquery-3.3.1.slim.min.js"><\/script>')</script>
 <script src="./files/popper.min.js"></script>
 <script src="./files/bootstrap.min.js"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<!--<script src="./files/holder.min.js"></script>-->
-
 
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none"
      style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
