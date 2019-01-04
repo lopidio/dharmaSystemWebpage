@@ -177,12 +177,22 @@ main::after {
     main::after {
         background: url(cover.png) no-repeat;
         top: 100px;
-        left: 0;
-        background-size: 100%;
+        left: -30vw;
+        min-height: 180vw;
+        /*background-size: 100%;*/
     }
 
     .navbar-brand {
         width: 10%;
+    }
+
+}
+
+@media (min-width: 1000px) {
+    main::after {
+        top: -100px;
+        left: -500px;
+        min-height: 180vw;
     }
 
 }
