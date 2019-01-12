@@ -73,18 +73,18 @@ main::after {
     padding-left: 3rem;
 }
 
-.dharma-header-text {
-    font-family: 'LilGroteskRegular';
-    font-size: 20px;
-    font-weight: bolder;
-    font-style: normal;
-}
-
 .dharma-header-title {
     font-family: 'quadrat-serialregular';
     font-weight: 900;
     text-align: center;
-    font-size: 42px;
+    font-size: 40px;
+    font-style: normal;
+}
+
+.dharma-header-text {
+    font-family: 'LilGroteskRegular';
+    font-size: 18px;
+    font-weight: bolder;
     font-style: normal;
 }
 
@@ -102,7 +102,7 @@ main::after {
 }
 
 .dharma-navbar-item {
-    color: #7f8078;
+    color: #46473f;
     font-family: 'LilGroteskRegular';
     font-weight: bold;
     font-style: normal;
