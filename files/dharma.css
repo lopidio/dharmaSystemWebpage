@@ -157,6 +157,12 @@ main::after {
     letter-spacing: -.05rem;
 }
 
+.dharma-topic-text {
+    font-family: 'LilGroteskRegular';
+    color: #f7f7f7;
+}
+
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
