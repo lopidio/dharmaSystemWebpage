@@ -169,6 +169,7 @@ main::after {
 
 .dharma-topic-text {
     font-family: 'LilGroteskRegular';
+    text-align: justify;
     color: #f7f7f7;
     font-size: 1.25rem;
     font-weight: 300;
