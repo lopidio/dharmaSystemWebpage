@@ -67,6 +67,9 @@ main::after {
     width: 50%;
 }
 
+.jiangHu-brand {
+}
+
 .dharma-header {
     color: black;
     padding-right: 3rem;
@@ -167,6 +170,8 @@ main::after {
 .dharma-topic-text {
     font-family: 'LilGroteskRegular';
     color: #f7f7f7;
+    font-size: 1.25rem;
+    font-weight: 300;
 }
 
 
@@ -197,6 +202,18 @@ main::after {
 
     .navbar-brand {
         width: 10%;
+    }
+
+    .everlast-brand {
+        width: 60%;
+    }
+
+    .jiangHu-brand {
+        width: 60%;
+    }
+
+    .maleficarum-brand {
+        width: 60%;
     }
 
 }
