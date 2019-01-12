@@ -149,12 +149,19 @@ main::after {
     margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings */
 .dharma-topic-heading {
     font-family: 'quadrat-serialregular';
     font-weight: 300;
     line-height: 1;
     letter-spacing: -.05rem;
+    color: #f7f7f7;
+}
+
+.dharma-topic-subtitle {
+    font-family: 'quadrat-serialregular';
+    font-weight: 300;
+    line-height: 1;
+    font-size: 1.75em;
 }
 
 .dharma-topic-text {
