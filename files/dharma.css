@@ -67,6 +67,10 @@ main::after {
     width: 50%;
 }
 
+.book-thumb {
+    height: auto;
+}
+
 .jiangHu-brand {
 }
 
@@ -139,7 +143,7 @@ main::after {
 ------------------------- */
 
 .dharma-topic {
-    padding: 6rem 4rem 6rem;
+    padding: 3rem 4rem 3rem;
     margin: 3rem 0 3rem;
 }
 
@@ -205,16 +209,8 @@ main::after {
         width: 10%;
     }
 
-    .everlast-brand {
-        width: 60%;
-    }
-
-    .jiangHu-brand {
-        width: 60%;
-    }
-
-    .maleficarum-brand {
-        width: 60%;
+    .book-thumb {
+        width: 50%;
     }
 
 }
@@ -227,5 +223,3 @@ main::after {
     }
 
 }
-
-
