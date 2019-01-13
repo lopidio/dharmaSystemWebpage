@@ -434,7 +434,6 @@
     </footer>
 </main>
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"
         integrity="sha256-399DNRyfIpWIy1ZV0KmEIIuIQ5sBHdLu9MBtVHrNtt8=" crossorigin="anonymous"></script>
 
@@ -445,6 +444,27 @@
 <script>window.jQuery || document.write('<script src="./files/jquery-3.3.1.slim.min.js"><\/script>')</script>
 <script src="./files/popper.min.js"></script>
 <script src="./files/bootstrap.min.js"></script>
+
+<script>
+    // The function actually applying the offset
+    function offsetAnchor() {
+        if (location.hash.length !== 0) {
+            window.scrollTo(window.scrollX, window.scrollY - $('.dharma-navbar').css('height').replace(/[^-\d\.]/g, ''));
+        }
+    }
+
+    // Captures click events of all <a> elements with href starting with #
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        // Click events are captured before hashchanges. Timeout
+        // causes offsetAnchor to be called after the page jump.
+        window.setTimeout(function () {
+            offsetAnchor();
+        }, 0);
+    });
+
+    // Set the offset when entering page with hash present in the url
+    window.setTimeout(offsetAnchor, 0);
+</script>
 
 <svg xmlns="http://www.w3.org/2000/svg" width="500" height="500" viewBox="0 0 500 500" preserveAspectRatio="none"
      style="display: none; visibility: hidden; position: absolute; top: -100%; left: -100%;">
