@@ -3,7 +3,7 @@
 /* Padding below the footer and lighter body text */
 
 html {
-    scroll-behavior: smooth;
+    /*scroll-behavior: smooth;*/
     /*https://css-tricks.com/snippets/jquery/smooth-scrolling/*/
 }
 
@@ -54,7 +54,7 @@ main::after {
 
 @font-face {
     font-family: 'quadrat-serialregular';
-    src: url('./quadratserialregular-webfont.woff2') format('woff2'),
+    /*src: url('./quadratserialregular-webfont.woff2') format('woff2'),*/
     url('./quadratserialregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -65,8 +65,11 @@ main::after {
 }
 
 .book-thumb {
-    height: auto;
-    width: 50%;
+    width: 80%;
+}
+
+.store-thumbnail {
+    width: calc(78%/3);
 }
 
 .jiangHu-brand {
@@ -141,7 +144,7 @@ main::after {
 ------------------------- */
 
 .dharma-topic {
-    padding: 3rem 4rem 3rem;
+    padding: 3rem 2rem 3rem;
     margin: 3rem 0 3rem;
 }
 
@@ -181,6 +184,10 @@ main::after {
 -------------------------------------------------- */
 
 @media (min-width: 600px) {
+    .navbar-brand {
+        width: 30%;
+    }
+
     .dharma-topic-heading {
         font-size: 50px;
     }
@@ -192,13 +199,6 @@ main::after {
 }
 
 @media (min-width: 700px) {
-    .navbar-brand {
-        width: 10%;
-    }
-
-    .book-thumb {
-        width: 50%;
-    }
 
     main::after {
         min-height: 180vh;
@@ -207,8 +207,20 @@ main::after {
 }
 
 @media (min-width: 1000px) {
+    .book-thumb {
+        width: 50%;
+    }
+
+    .store-thumbnail {
+        width: calc(48%/3);
+    }
+
     main::after {
         min-height: 220vh;
+    }
+
+    .navbar-brand {
+        width: 10%;
     }
 
 }
@@ -219,4 +231,3 @@ main::after {
     }
 
 }
-
