@@ -14,17 +14,14 @@ body {
 
 main::after {
     content: "";
-    background-size: 150%;
-    background: url(cover.png);
+    background-size: 100%;
+    background: url(cover.jpg);
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
     background-position: center;
-    padding: 0;
-    margin: 0;
     left: 0;
     opacity: 0.2;
-    top: -100vw;
-    min-height: 500vh;
+    top: 0;
+    min-height: 250vh;
     bottom: 0;
     right: 0;
     position: absolute;
@@ -69,6 +66,7 @@ main::after {
 
 .book-thumb {
     height: auto;
+    width: 50%;
 }
 
 .jiangHu-brand {
@@ -179,7 +177,6 @@ main::after {
     font-weight: 300;
 }
 
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
@@ -189,22 +186,12 @@ main::after {
     }
 
     main::after {
-        background: url(cover.png) no-repeat;
-        top: 0;
-        left: -140vw;
         opacity: 0.5;
+        min-height: 500vh;
     }
 }
 
 @media (min-width: 700px) {
-    main::after {
-        background: url(cover.png) no-repeat;
-        top: 100px;
-        left: -30vw;
-        min-height: 180vw;
-        /*background-size: 100%;*/
-    }
-
     .navbar-brand {
         width: 10%;
     }
@@ -213,13 +200,23 @@ main::after {
         width: 50%;
     }
 
+    main::after {
+        min-height: 180vh;
+    }
+
 }
 
 @media (min-width: 1000px) {
     main::after {
-        top: -100px;
-        left: -500px;
-        min-height: 180vw;
+        min-height: 220vh;
     }
 
 }
+
+@media (min-width: 1400px) {
+    main::after {
+        min-height: 180vh;
+    }
+
+}
+
