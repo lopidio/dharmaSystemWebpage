@@ -54,7 +54,7 @@ main::after {
 
 @font-face {
     font-family: 'quadrat-serialregular';
-    /*src: url('./quadratserialregular-webfont.woff2') format('woff2'),*/
+    src: url('./quadratserialregular-webfont.woff2') format('woff2'),
     url('./quadratserialregular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
