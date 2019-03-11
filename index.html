@@ -438,14 +438,28 @@
         integrity="sha256-399DNRyfIpWIy1ZV0KmEIIuIQ5sBHdLu9MBtVHrNtt8=" crossorigin="anonymous"></script>
 
 <script>new WOW().init();</script>
-<script src="./files/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="./files/jquery-3.3.1.slim.min.js"><\/script>')</script>
+<script src="./files/jquery-3.3.1.slim.min.js"></script>
 <script src="./files/popper.min.js"></script>
 <script src="./files/bootstrap.min.js"></script>
+<script src="https://gitcdn.xyz/repo/thesmart/jquery-scrollspy/0.1.3/scrollspy.js"></script>
 
 <script>
+    // WOW.prototype.addBox = function(element){
+    //     this.boxes.push(element);
+    // };
+    //
+    // new WOW().init();
+    //
+    // $('.wow').on('scrollSpy:exit',function(){
+    //     console.log('scrollSpy');
+    //     $(this).css({
+    //         'visibility' : 'hidden',
+    //         'animation-name' : 'none'
+    //     }).removeClass('animated');
+    //     wow.addBox(this);
+    // });
+
+
     // The function actually applying the offset
     function offsetAnchor() {
         if (location.hash.length !== 0) {
@@ -454,7 +468,7 @@
     }
 
     // Captures click events of all <a> elements with href starting with #
-    $(document).on('click', 'a[href^="#"]', function (event) {
+    $(document).on('click', 'a[href^="#"]', function () {
         // Click events are captured before hashchanges. Timeout
         // causes offsetAnchor to be called after the page jump.
         window.setTimeout(function () {

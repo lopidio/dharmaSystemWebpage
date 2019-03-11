@@ -100,6 +100,7 @@ main::after {
     padding: 10px 35px;
     font-size: 20px;
     border-radius: 0px;
+    font-family: 'quadrat-serialregular';
     background-color: #65c37e;
     color: white;
 }
