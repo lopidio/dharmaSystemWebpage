@@ -65,11 +65,16 @@ main::after {
 }
 
 .book-thumb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 80%;
 }
 
 .store-thumbnail {
-    width: calc(78%/3);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .jiangHu-brand {
@@ -200,6 +205,10 @@ main::after {
 }
 
 @media (min-width: 700px) {
+    .stores-container {
+        padding-left: .5rem!important;
+        padding-right: .5rem!important;
+    }
 
     main::after {
         min-height: 180vh;
@@ -210,10 +219,6 @@ main::after {
 @media (min-width: 1000px) {
     .book-thumb {
         width: 50%;
-    }
-
-    .store-thumbnail {
-        width: calc(48%/3);
     }
 
     main::after {
@@ -229,6 +234,14 @@ main::after {
 @media (min-width: 1400px) {
     main::after {
         min-height: 180vh;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .stores-container {
+        padding-left: 2.5rem!important;
+        padding-right: 2.5rem!important;
     }
 
 }
